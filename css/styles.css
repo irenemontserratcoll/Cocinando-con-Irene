@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
     padding: 5px; 
     background-color: #fedeeb;
-    max-width: 400px; /* Ancho máximo para pantallas */
+    max-width: 100%; 
 }
 
 /* Centrar las cabeceras  */
@@ -32,17 +32,17 @@ p {
 
 /* Imágenes */
 img {
-    width: 400px;  
-    height: 400px; 
     display: block; /* Sin esto la imagen no se me centraba bien, lo he tenido que buscar */
     margin: 0 auto;
     border-radius: 100px;
+    max-width: 40%;
 }
 
 /* Imágenes de la tabla*/
 .imagen-tabla {
     width: 150px;  
-    height: 150px; 
+    height: auto; 
+    max-width: 100%;
     display: block; /* Sin esto la imagen no se me centraba bien, lo he tenido que buscar */
     margin: 10px auto;
     border-radius: 100px;
@@ -120,5 +120,4 @@ section button {
     border-radius: 8px;
     background-color: #f8b6c1;
     color: #333;
-
 }
