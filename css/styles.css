@@ -1,0 +1,123 @@
+body {
+    /* Tipo de letra */
+    font-family: 'Dancing Script', cursive;
+    margin: 0 auto;
+    padding: 5px; 
+    background-color: #fedeeb;
+    max-width: 900px; /* Ancho máximo para pantallas */
+}
+
+/* Centrar las cabeceras  */
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+/* Lo he hecho asi para centrar los parrafos de letra pero no las listas que prefiero que esten a la izq */
+p { 
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+/*Lista de index a la izq*/
+.lista-links {
+    text-align: left;             
+    margin: 20px 0;               
+}
+
+.lista-links li p {  /*Esta sección es para forzar a que el texto este a la izq*/
+    text-align: left;             
+    margin: 5px 0;                
+}
+
+
+/* Imágenes */
+img {
+    width: 400px;  
+    height: 400px; 
+    display: block; /* Sin esto la imagen no se me centraba bien, lo he tenido que buscar */
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+/* Imágenes de la tabla*/
+.imagen-tabla {
+    width: 150px;  
+    height: 150px; 
+    display: block; /* Sin esto la imagen no se me centraba bien, lo he tenido que buscar */
+    margin: 10px auto;
+    border-radius: 100px;
+}
+
+/* Estilo del menú para que este en horizontal */
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; 
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8b6c1;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+
+p5{
+    text-align: center;
+    font-size: 14px;
+    color: #333;    
+    margin-top: 10px;
+}
+
+.tabla-recetas {
+    border-collapse: collapse;   
+    margin: 20px auto;           /* centra la tabla */
+    width: 80%;      
+}
+
+.tabla-recetas, th, td {
+    border: 1px solid black;    
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;  /* los elementos se apilan verticalmente */
+    align-items: center;     /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente si el contenedor tiene altura */
+    margin: 40px auto;       /* margen superior/inferior y auto para centrar horizontal */
+    max-width: 600px;        /* ancho máximo de la sección */
+    padding: 20px;
+    background-color: #fff7f8; /* color de fondo opcional para destacar */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra suave */
+}
+
+/* Que los labels y inputs se alineen a la izquierda dentro de la sección centrada */
+section label,
+section input,
+section textarea,
+section select {
+    width: 100%;           /* ocupan todo el ancho del contenedor */
+    max-width: 500px;      /* opcional: limitar ancho */
+    margin-bottom: 10px;
+}
+
+/* Centrar el botón */
+section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #f8b6c1;
+    color: #333;
+}

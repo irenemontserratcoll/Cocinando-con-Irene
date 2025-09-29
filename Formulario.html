@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Cabecera del HTML -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocinando con Irene</title>
+    <!-- link a fichero css que da stylo a la página -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Al intetnar cambiar la fuente de letra tenía que importarta desde google, por eso este link. Esta info me la ha dado Gémini -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <!-- Cuerpo de la página inicial HTML -->
+  <body>
+        <!-- MENU PERMANENTE, tiene que estar en todos los html -->
+        <nav>
+            <ul class = "menu"> <!-- Llamar a esta sección menu hace que pueda poner un estilo propio en el css -->
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="receta.html">Recetario</a>
+                </li>
+                <li><a href="Formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+
+    
+  	<div>
+		<h1>Comparte tu receta</h1>
+        <p>¿Tienes una receta especial? ¡Compártela con nosotros!</p>
+           <section>
+                <h2>Formulario de envío de recetas</h2>
+                <form action="#" method="post">
+                <!-- Nombre de la receta -->
+                <label for="nombre-receta">Nombre de la receta:</label><br>
+                <input type="text" id="nombre-receta" name="nombre-receta" required><br><br>
+
+                <!-- Ingredientes -->
+                <label for="ingredientes">Ingredientes:</label><br>
+                <textarea id="ingredientes" name="ingredientes" rows="5" required></textarea><br><br>
+
+                <!-- Preparación -->
+                <label for="preparacion">Preparación:</label><br>
+                <textarea id="preparacion" name="preparacion" rows="5" required></textarea><br><br>
+
+                <!-- Nivel de dificultad -->
+                <label for="dificultad">Nivel de dificultad:</label><br>
+                <select id="dificultad" name="dificultad" required>
+                    <option value="">Selecciona</option>
+                    <option value="facil">Fácil</option>
+                    <option value="media">Media</option>
+                    <option value="dificil">Difícil</option>
+                </select><br><br>
+
+                <!-- Botón de enviar -->
+                <button type="submit">Enviar receta</button>
+            </form>
+        </section>
+
+	</div>
+
+    <footer class="footer">
+        <p>© 2025 Cocinando con Irene</p>
+        <p>*Las imágenes utilizadas en este sitio web han sido generadas mediante IA generativa.</p>
+    </footer>
+  </body>
+</html>
