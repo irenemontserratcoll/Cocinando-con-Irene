@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
     padding: 5px; 
     background-color: #fedeeb;
-    max-width: 900px; /* Ancho máximo para pantallas */
+    max-width: 400px; /* Ancho máximo para pantallas */
 }
 
 /* Centrar las cabeceras  */
@@ -120,4 +120,5 @@ section button {
     border-radius: 8px;
     background-color: #f8b6c1;
     color: #333;
+
 }
